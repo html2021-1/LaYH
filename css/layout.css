@@ -1,0 +1,264 @@
+h1,
+h2 {
+    font: inherit;
+    font-size: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
+    border: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#wrap,
+header,
+nav,
+section,
+footer {
+    display: block;
+}
+
+body,
+#wrap {
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    background: url("../images/backgroundWoodPattern.jpg")no-repeat center;
+    background-size: cover;
+} */
+
+#header {
+    position: relative;
+    background: url("../images/dario-mazzone-presentazione-det-01.png")no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#header h1 {
+    position: absolute;
+    top: 2vw;
+    left: 5vw;
+    color: #fcf1e7;
+    font-size: 6vw;
+    transform: translate(-1000px, 0);
+    opacity: 0;
+    transition: all 1.2s;
+}
+
+#header h1 strong {
+    font-size: 10vw;
+}
+
+#nav {
+    position: fixed;
+    top: -500px;
+    right: 10vw;
+    width: 250px;
+    height: 600px;
+    background: rgb(94, 72, 40);
+    color: #fcf1e7;
+    font-size: 2vw;
+    z-index: 99;
+    transition: all 0.8s;
+}
+
+/* #nav:hover {
+    top: 0;
+} */
+
+#nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#nav ul li {
+    margin-top: 2vw;
+}
+
+#container,
+#paperBagHead,
+#paperBagBody,
+.stikerMemo,
+.photoFrame {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#container {
+    background-image: url("../images/backgroundWoodPattern.jpg");
+    background-attachment: fixed;
+}
+
+#introduce {
+    position: relative;
+    height: 200vh;
+}
+
+.intro_wrap {
+    position: absolute;
+    width: 474px;
+    height: 850px;
+    top: 30vh;
+    left: 50vw;
+    margin-left: -10%;
+}
+
+.intro_wrap > div {
+    position: absolute;
+}
+
+.back {
+    top: 0;
+    left: 0;
+}
+
+.paper {
+    top: 100px;
+    left: 17px;
+    width: 400px;
+    height: 660px;
+    padding: 20px;
+    background: #eeeeee;
+}
+
+.paper img{
+    width: 150px;
+    height: 150px;
+}
+
+.paper.updown {
+    animation: updown 1s ease-in infinite alternate;
+}
+
+.front {
+    bottom: 0;
+    left: 0;
+}
+
+@keyframes updown {
+    0%{transform: translateY(10px);}
+    50%{transform: translateY(0px);}
+    100%{transform: translateY(-10px);}
+}
+
+#introWrapAfter {
+    display: none;
+    transform: rotate(33deg) translate(-470px, 200px);
+}
+
+#introWrapAfter .paper {
+    left: 500px;
+    top: -260px;
+    transform: rotate(-26deg);
+}
+
+#myProject {
+    width: 100%;
+}
+
+#myPWrap {
+    width: 80%;
+    height: 500vh;
+    margin: 0 auto;
+    padding: 20vh 0;
+    background: url("../images/pin-board.jpg") repeat-y center;
+    box-sizing: border-box;
+    /* border: 10px solid #fff; */
+    border: 20px solid transparent;
+    border-image: url("../images/wood-2045379_1280.jpg") 30;
+}
+
+#purblising,
+#design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stikerMemo {
+    position: relative;
+    background-image: url("../images/note-147951_640.png");
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+}
+
+.stikerMemo h4 {
+    font-size: 50px;
+    line-height: 175px;
+}
+
+.photoFrame {
+    position: relative;
+    background-image: url("../images/photoFrame01.png");
+    background-size: cover;
+    width: 350px;
+    height: 400px;
+    text-align: center;
+}
+
+.photoFrame img {
+    width: 30vw;
+    height: 45vh;
+    background-color: #fef3e9;
+}
+
+.photoFrame h4 {
+    position: absolute;
+    bottom: 20px;
+    left: 125px;
+}
+
+.photoFrame:nth-child(odd) {
+    background-image: url("../images/photoFrame02.png");
+    right: 20vw;
+}
+
+.photoFrame:nth-child(even) {
+    background-image: url("../images/photoFrame03.png");
+    left: 20vw;
+}
+
+#footer {
+    width: 100%;
+    height: 100vh;
+}
+
+#email {
+    width: 800px;
+    height: 400px;
+    background: #f7e4dd;
+    margin: 20vh auto;
+}
+
+#header h1.fade {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+#nav.down{
+    top: 0;
+}
